@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import BookingForm from './components/BookingForm'
 
-const API_BASE = 'http://localhost:4000/api'
+const API_BASE = const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:4000/api'
 
 export default function App() {
   const [services, setServices] = useState([])
