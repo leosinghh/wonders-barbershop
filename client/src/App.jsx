@@ -83,16 +83,16 @@ export default function App() {
           <p className="eyebrow">Hours</p>
           <h3>Opening times</h3>
           <ul>
-            <li>Mon - Thu: 9:00 AM - 7:00 PM</li>
-            <li>Fri - Sat: 9:00 AM - 8:00 PM</li>
-            <li>Sun: 12:00 PM - 6:00 PM</li>
+            <li>Mon - Thu: 10:00 AM - 8:30 PM</li>
+            <li>Fri - Sat: 10:00 AM - 9:00 PM</li>
+            <li>Sun: 1:00 PM - 8:00 PM</li>
           </ul>
         </div>
         <div className="info-card" id="contact">
           <p className="eyebrow">Contact</p>
           <h3>Wonders Barbershop</h3>
-          <p>East Legon, Accra</p>
-          <p>+233 20 000 0000</p>
+          <p>Tse Addo, Accra</p>
+          <p>+233 059 578 4420</p>
           <p>bookings@wondersbarbershop.com</p>
         </div>
       </section>
