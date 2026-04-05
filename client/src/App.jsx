@@ -91,7 +91,7 @@ export default function App() {
         <div className="info-card" id="contact">
           <p className="eyebrow">Contact</p>
           <h3>Wonders Barbershop</h3>
-          <p>Tse Addo, Accra</p>
+          <p>Tse Addo, Cocoa St, Accra</p>
           <p>+233 059 578 4420</p>
           <p>bookings@wondersbarbershop.com</p>
         </div>
