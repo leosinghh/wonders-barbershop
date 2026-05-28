@@ -35,7 +35,7 @@ const services = [
     name: 'Home Service',
     description: 'Exclusive home-service experience.',
     durationMinutes: 45,
-    price: 70
+    price: 700
   },
   {
     id: 7,
