@@ -7,21 +7,63 @@ const services = [
     name: 'Haircut',
     description: 'Clean haircut with premium finishing.',
     durationMinutes: 45,
-    price: 100
+    price: 170
   },
   {
     id: 2,
     name: 'Haircut + Beard',
     description: 'Precision haircut and beard shaping.',
     durationMinutes: 60,
-    price: 150
+    price: 200
   },
   {
     id: 3,
     name: 'After Hours VIP',
     description: 'Exclusive after-hours grooming experience.',
     durationMinutes: 60,
-    price: 250
+    price: 400
+  },
+  {
+    id: 5,
+    name: 'Taper Fade Only',
+    description: 'Exclusive taper with premium finishing.',
+    durationMinutes: 30,
+    price: 150
+  },
+  {
+    id: 6,
+    name: 'Home Service',
+    description: 'Exclusive home-service experience.',
+    durationMinutes: 45,
+    price: 70
+  },
+  {
+    id: 7,
+    name: 'Hair Lineup Only',
+    description: 'Premium Hair Lineup.',
+    durationMinutes: 15,
+    price: 100
+  },
+  {
+    id: 8,
+    name: 'Hairline and Beard Shapeup',
+    description: 'Precision hair and beard lineup.',
+    durationMinutes: 25,
+    price: 150
+  },
+  {
+    id: 9,
+    name: 'Kids Haircut',
+    description: 'Clean kids haircut with premium finishing.',
+    durationMinutes: 35,
+    price: 150
+  },
+  {
+    id: 10,
+    name: 'Beard Trim/Lineup',
+    description: 'Precision Beard Trim and Shaping.',
+    durationMinutes: 15,
+    price: 100
   }
 ]
 
