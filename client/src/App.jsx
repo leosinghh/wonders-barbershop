@@ -1,4 +1,3 @@
-jsx
 const BOOKING_URL =
   'https://www.fresha.com/a/wonders-barbers-studio-accra-nmatie-abonase-st-nmati-abonase-street-tj2y19yq'
 
