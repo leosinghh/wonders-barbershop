@@ -12,14 +12,40 @@
 }
 
 * { box-sizing: border-box; }
+
 html { scroll-behavior: smooth; }
+
 body {
   margin: 0;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(180deg, #0b0b0d 0%, #121216 100%);
   color: var(--text);
+  position: relative;
 }
-a { color: inherit; text-decoration: none; }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('/barbershop-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(14px);
+  transform: scale(1.08);
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 12, 0.85);
+  z-index: -1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .page {
   max-width: 1200px;
@@ -90,10 +116,14 @@ a { color: inherit; text-decoration: none; }
   cursor: pointer;
 }
 
-.hero-card, .service-card, .info-card, .booking-form {
-  background: rgba(255,255,255,0.03);
+.hero-card,
+.service-card,
+.info-card,
+.booking-form,
+.portfolio-card {
+  background: rgba(20, 20, 24, 0.65);
   border: 1px solid var(--line);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(18px);
   border-radius: 24px;
 }
 
@@ -106,7 +136,7 @@ a { color: inherit; text-decoration: none; }
 .stat {
   padding: 16px;
   border-radius: 18px;
-  background: var(--panel);
+  background: rgba(23, 23, 27, 0.75);
   border: 1px solid var(--line);
 }
 
@@ -130,21 +160,26 @@ a { color: inherit; text-decoration: none; }
   font-size: 2rem;
 }
 
-.services-grid, .info-grid {
+.services-grid,
+.info-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
-.service-card, .info-card {
+.service-card,
+.info-card {
   padding: 22px;
 }
 
-.service-card h3, .info-card h3 {
+.service-card h3,
+.info-card h3 {
   margin-top: 0;
 }
 
-.service-card p, .info-card p, .info-card li {
+.service-card p,
+.info-card p,
+.info-card li {
   color: var(--muted);
   line-height: 1.6;
 }
@@ -175,7 +210,9 @@ label {
   margin-bottom: 16px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   background: var(--panel);
   color: var(--text);
@@ -189,8 +226,31 @@ input, select, textarea {
   margin-top: 14px;
   font-weight: 600;
 }
+
 .status.success { color: var(--success); }
 .status.error { color: var(--error); }
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.portfolio-card {
+  overflow: hidden;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.portfolio-card:hover .portfolio-image {
+  transform: scale(1.04);
+}
 
 .footer {
   padding: 28px 0 12px;
@@ -209,6 +269,14 @@ input, select, textarea {
     grid-template-columns: 1fr;
   }
 
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-image {
+    height: 280px;
+  }
+
   .nav {
     flex-direction: column;
     gap: 14px;
@@ -218,40 +286,5 @@ input, select, textarea {
   .footer {
     flex-direction: column;
     gap: 8px;
-  }
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-}
-
-.portfolio-card {
-  overflow: hidden;
-  border-radius: 24px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.03);
-}
-
-.portfolio-image {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.25s ease;
-}
-
-.portfolio-card:hover .portfolio-image {
-  transform: scale(1.04);
-}
-
-@media (max-width: 900px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .portfolio-image {
-    height: 280px;
   }
 }
