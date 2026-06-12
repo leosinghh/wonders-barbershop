@@ -82,7 +82,13 @@ export default function App() {
   return (
     <div className="page">
       <header className="nav">
-        <div className="brand">Wonders Barbershop</div>
+        <div className="brand">
+  <img
+    src="/barber-logo.png"
+    alt="Wonders Barbers Studio"
+    className="logo"
+  />
+</div>
 
         <nav>
           <a href="#services">Services</a>
