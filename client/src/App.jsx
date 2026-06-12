@@ -84,7 +84,7 @@ export default function App() {
       <header className="nav">
         <div className="brand">
   <img
-    src="/barber-logo.jpg"
+    src="/barber-logo.png"
     alt="Wonders Barbers Studio"
     className="logo"
   />
