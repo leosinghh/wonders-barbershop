@@ -1,6 +1,17 @@
 const BOOKING_URL =
   'https://www.fresha.com/a/wonders-barbers-studio-accra-nmatie-abonase-st-nmati-abonase-street-tj2y19yq'
 
+const portfolioImages = [
+  '/cut-1.PNG',
+  '/cut-2.PNG',
+  '/cut-3.PNG',
+  '/cut-4.PNG',
+  '/cut-5.PNG',
+  '/cut-6.PNG',
+  '/cut-7.PNG',
+  '/cut-8.PNG',
+]
+
 const services = [
   {
     id: 1,
@@ -75,6 +86,7 @@ export default function App() {
 
         <nav>
           <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
           <a href="#booking">Booking</a>
           <a href="#hours">Hours</a>
           <a href="#contact">Contact</a>
@@ -157,6 +169,25 @@ export default function App() {
         </div>
       </section>
 
+      <section id="portfolio" className="section">
+        <div className="section-heading">
+          <p className="eyebrow">Portfolio</p>
+          <h2>Recent Work</h2>
+        </div>
+
+        <div className="portfolio-grid">
+          {portfolioImages.map((image, index) => (
+            <div className="portfolio-card" key={index}>
+              <img
+                src={image}
+                alt={`Style ${index + 1}`}
+                className="portfolio-image"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section
         id="booking"
         className="section booking-section"
@@ -203,9 +234,7 @@ export default function App() {
       <footer className="footer">
         <span>© 2026 Wonders Barbershop</span>
 
-        <span>
-          Crafted for a premium barbershop brand
-        </span>
+        
       </footer>
     </div>
   )
