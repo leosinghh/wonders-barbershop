@@ -234,7 +234,9 @@ export default function App() {
       <footer className="footer">
         <span>© 2026 Wonders Barbershop</span>
 
-        
+        <span>
+          Crafted for a premium barbershop brand
+        </span>
       </footer>
     </div>
   )
